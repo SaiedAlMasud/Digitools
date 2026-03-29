@@ -1,0 +1,130 @@
+[
+  {
+    "id": 1,
+    "name": "AI Writing Pro",
+    "image": "src/assets/products/design-tool.png",
+    "description": "Generate high-quality content, blogs, and marketing copy in seconds with advanced AI.",
+    "price": 29,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": [
+      "Unlimited AI generations",
+      "50+ writing templates",
+      "Grammar checker"
+    ],
+    "icon": "CiEdit"
+  },
+  {
+    "id": 2,
+    "name": "Design Templates Pack",
+    "image": "src/assets/products/operation.png",
+    "description": "2000+ premium templates for social media, presentations, and marketing materials.",
+    "price": 49,
+    "period": "one-time",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "2000+ templates",
+      "Monthly updates",
+      "Commercial license"
+    ],
+    "icon": "CiPalette"
+  },
+  {
+    "id": 3,
+    "name": "Premium Stock Assets",
+    "image": "src/assets/products/portfolio.png",
+    "description": "Access millions of royalty-free photos, videos, and graphics for your projects.",
+    "price": 19,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "10M+ assets",
+      "Commercial use",
+      "No attribution"
+    ],
+    "icon": "CiCamera"
+  },
+  {
+    "id": 4,
+    "name": "Automation Toolkit",
+    "image": "src/assets/products/shopping-cart.png",
+    "description": "Automate repetitive tasks and streamline your workflow with powerful tools.",
+    "price": 79,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "50+ automations",
+      "API access",
+      "Custom workflows"
+    ],
+    "icon": "CiSettings"
+  },
+  {
+    "id": 5,
+    "name": "Resume Builder Pro",
+    "image": "src/assets/products/social-media.png",
+    "description": "Create professional resumes and cover letters that land interviews.",
+    "price": 15,
+    "period": "one-time",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "100+ templates",
+      "ATS optimization",
+      "Export to PDF"
+    ],
+    "icon": "CiFileOn"
+  },
+  {
+    "id": 6,
+    "name": "Social Media Content Kit",
+    "image": "src/assets/products/writing_23274001.png",
+    "description": "Complete toolkit for creating engaging social media content across all platforms.",
+    "price": 39,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": [
+      "5000+ assets",
+      "Scheduler included",
+      "Analytics dashboard"
+    ],
+    "icon": "CiShare2"
+  },
+  {
+    "id": 7,
+    "name": "Video Editing Suite",
+    "image": "src/assets/products/social-media.png",
+    "description": "Professional video editing tools with effects, transitions, and AI enhancements.",
+    "price": 59,
+    "period": "yearly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "4K export",
+      "100+ effects",
+      "AI auto-edit"
+    ],
+    "icon": "CiVideoOn"
+  },
+  {
+    "id": 8,
+    "name": "Email Marketing Pro",
+    "image": "src/assets/products/operation.png",
+    "description": "Create, automate, and optimize email campaigns with powerful analytics.",
+    "price": 25,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "Drag & drop builder",
+      "Automation flows",
+      "Open rate tracking"
+    ],
+    "icon": "CiMail"
+  }
+]
