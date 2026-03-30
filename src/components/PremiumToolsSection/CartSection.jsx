@@ -22,7 +22,7 @@ function CartSection({ selectedProduct, setSelectedProduct,totalPrice, setTotalP
             <div><h1 className="text-xl font-bold mb-5">Your Cart</h1></div>
             {selectedProduct.length === 0 ?
                 <div className="flex flex-col items-center justify-center text-gray-500 my-30 space-y-4">
-                    <img className="w-8 h-8" src="/src/assets/products/shopping-cart.png" alt="" />
+                    <img className="w-8 h-8" src="/assets/products/shopping-cart.png" alt="" />
                     <p className="text-2xl">Your cart is empty.</p>
                 </div> :
                 <div className="grid grid-cols-1 gap-6 my-10">

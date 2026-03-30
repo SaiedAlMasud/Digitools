@@ -25,7 +25,7 @@ function BannerSection() {
                 </div>
             </div>
             <div className="Banner-img">
-                <img src="/src/assets/Banner.png" alt="Banner" />
+                <img src="/assets/banner.png" alt="Banner" />
             </div>
         </div>
     );
