@@ -15,8 +15,13 @@ function Navbar({ selectedProduct }) {
                     <li>FAQ</li>
                 </ul>
             </div>
-            <div className="navbar-end ">
-                <CiShoppingCart className="text-2xl font-semibold mr-2" />{selectedProduct.length > 0 ? <span>({selectedProduct.length})</span> : null}
+            <div className="navbar-end">
+                <div className="relative">
+                    <CiShoppingCart className="text-2xl font-semibold mr-2" />
+                    {selectedProduct.length > 0 ? 
+                        <span className="px-2 bg-red-500 rounded-full absolute -top-3 -right-3 text-white">{selectedProduct.length}</span> :
+                        null}
+                </div>
                 <a className="btn btn-ghost rounded-3xl mr-4 text-[16px]">Login</a>
                 <a className="btn rounded-3xl bg-linear-to-r from-blue-500 to-purple-500 text-white">
                     Get Started
