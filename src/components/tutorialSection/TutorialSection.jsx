@@ -1,7 +1,7 @@
 import React from "react";
 function TutorialSection() {
     return (
-        <div className="my-20">
+        <div className="py-20 bg-base-200">
             <div className="text-center space-y-5">
                 <h1 className="text-5xl font-bold">
                     Get Started in 3 Steps
@@ -12,7 +12,7 @@ function TutorialSection() {
             </div>
             <div className="grid grid-cols-3 gap-10 w-10/12 mx-auto mt-10">
 
-                <div className="text-center space-y-3 border-2 border-gray-200 rounded-lg p-6">
+                <div className="text-center space-y-3 border-2 border-gray-200 rounded-lg p-4">
                     <div className="flex justify-end">
                         <span className="py-3 px-5 text-[16px] font-semibold bg-linear-to-r from-blue-500 to-purple-500 text-white rounded-full">1</span>
                     </div>
@@ -25,7 +25,7 @@ function TutorialSection() {
                     </p>
                 </div>
 
-                <div className="text-center space-y-3 border-2 border-gray-200 rounded-lg p-6">
+                <div className="text-center space-y-3 border-2 border-gray-200 rounded-lg p-4">
                     <div className="flex justify-end">
                         <span className="py-3 px-5 text-[16px] font-semibold bg-linear-to-r from-blue-500 to-purple-500 text-white rounded-full">2</span>
                     </div>
@@ -38,7 +38,7 @@ function TutorialSection() {
                     </p>
                 </div>
 
-                <div className="text-center space-y-3 border-2 border-gray-200 rounded-lg p-6">
+                <div className="text-center space-y-3 border-2 border-gray-200 rounded-lg p-4">
                     <div className="flex justify-end">
                         <span className="py-3 px-5 text-[16px] font-semibold bg-linear-to-r from-blue-500 to-purple-500 text-white rounded-full">3</span>
                     </div>

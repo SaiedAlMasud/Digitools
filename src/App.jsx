@@ -5,6 +5,7 @@ import BannerSection from './components/bannerSection/BannerSection'
 import StatsSection from './components/statsSection/StatsSection'
 import ToolsSection from './components/PremiumToolsSection/ToolsSection'
 import TutorialSection from './components/tutorialSection/TutorialSection'
+import PricingSection from './components/pricingSection/PricingSection'
 
 const fetchTools = async () => {
   const res = await fetch("/data.json");
@@ -22,9 +23,10 @@ function App() {
       <Suspense fallback={<h1 className="text-4xl font-bold text-center text-error mt-10">Loading tools...</h1>}>
         <ToolsSection toolsPromise={toolsPromise} />
       </Suspense>
-      */}
-
       <TutorialSection />
+      */}
+      <PricingSection />
+      
 
     </div>
   )
