@@ -3,7 +3,7 @@ import { CiPlay1 } from "react-icons/ci";
 import BannerHead from "./BannerHead";
 function BannerSection() {
     return (
-        <div className="flex gap-30 justify-center items-center my-20">
+        <div className="flex flex-col gap-30 justify-center items-center my-20 md:flex-row">
             <div>
                 <BannerHead />
                 <h1 className="text-7xl font-extrabold mb-6 text-[#101727]">

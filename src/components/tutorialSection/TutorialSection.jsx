@@ -10,7 +10,7 @@ function TutorialSection() {
                     Start using premium digital tools in minutes, not hours.
                 </p>
             </div>
-            <div className="grid grid-cols-3 gap-10 w-10/12 mx-auto mt-10">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-10 w-10/12 mx-auto mt-10">
 
                 <div className="text-center space-y-3 border-2 border-gray-200 rounded-lg p-4">
                     <div className="flex justify-end">

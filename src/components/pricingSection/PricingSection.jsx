@@ -47,7 +47,8 @@ function PricingSection() {
                     </button>
                 </div>
 
-                <div className="border border-gray-300 shadow-md rounded-lg p-5 bg-linear-to-r from-blue-500 to-purple-500 text-white">
+                <div className="border border-gray-300 shadow-md rounded-lg p-5 bg-linear-to-r from-blue-500 to-purple-500 text-white relative">
+                    <span className="absolute text-[#BB4D00] top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#FEF3C6] px-3 py-1 rounded-full justify-center">Most Popular</span>
                     <div className="space-y-2">
                         <h1 className="text-2xl font-semibold">
                             Pro

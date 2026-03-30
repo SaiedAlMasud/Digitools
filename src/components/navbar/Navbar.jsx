@@ -1,6 +1,6 @@
 import React from "react";
 import { CiShoppingCart } from "react-icons/ci";
-function Navbar() {
+function Navbar({ selectedProduct }) {
     return (
         <div className="navbar bg-base-100">
             <div className="navbar-start">
@@ -16,7 +16,7 @@ function Navbar() {
                 </ul>
             </div>
             <div className="navbar-end ">
-                <CiShoppingCart className="text-2xl font-semibold mr-4" />
+                <CiShoppingCart className="text-2xl font-semibold mr-2" />{selectedProduct.length > 0 ? <span>({selectedProduct.length})</span> : null}
                 <a className="btn btn-ghost rounded-3xl mr-4 text-[16px]">Login</a>
                 <a className="btn rounded-3xl bg-linear-to-r from-blue-500 to-purple-500 text-white">
                     Get Started

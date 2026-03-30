@@ -1,8 +1,10 @@
 import React, { use, useState } from "react";
 import PremiumCard from "./PremiumCard";
 import CartSection from "./CartSection";
-function ToolsSection({ toolsPromise }) {
+function ToolsSection({ toolsPromise, selectedProduct, setSelectedProduct }) {
+    const [totalPrice, setTotalPrice] = useState(0);
     const[buttonType, setButtonType] = useState("product");
+    
     const tools = use(toolsPromise); 
     const handleProductbtn = () => {
         setButtonType("product");
@@ -25,13 +27,18 @@ function ToolsSection({ toolsPromise }) {
                     Products
                 </button>
                 <button onClick={handleCartbtn} className={`btn rounded-r-3xl ${buttonType === "cart" ? "bg-linear-to-r from-blue-500 to-purple-500 text-white" : "bg-gray-200 text-gray-600"}`}>
-                    Cart
+                    Cart {selectedProduct.length > 0 ? `(${selectedProduct.length})` : ""}
                 </button>
             </div>
-            <div className="grid grid-cols-3 gap-12 w-11/12 mx-auto">
-                {buttonType === "product" ? tools.map((tool) => (
-                    <PremiumCard key={tool.id} tool={tool} />
-                )) : <CartSection />}
+            <div className="">
+                {buttonType === "product" ? (
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-12 w-11/12 mx-auto">
+                    {tools.map((tool) => (
+                    <PremiumCard setSelectedProduct={setSelectedProduct} selectedProduct={selectedProduct} key={tool.id} tool={tool} totalPrice={totalPrice} setTotalPrice={setTotalPrice}/>
+                    ))}
+                </div>
+                ) : 
+                (<CartSection selectedProduct={selectedProduct} setSelectedProduct={setSelectedProduct} totalPrice={totalPrice} setTotalPrice={setTotalPrice}/>)}
             </div>
         </div>
     );

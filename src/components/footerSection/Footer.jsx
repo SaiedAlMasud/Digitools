@@ -4,7 +4,7 @@ import { RiInstagramFill } from "react-icons/ri";
 function Footer() {
     return (
         <footer className="bg-gray-800 text-white p-20 w-full">
-            <div className="flex gap-18 w-7/12 mx-auto">
+            <div className="flex flex-col md:flex-row gap-18 w-7/12 mx-auto">
                 <div className="space-y-4">
                     <h1 className="text-4xl font-bold">Digitools</h1>
                     <p className="text-[16px] text-white opacity-80">Premium digital tools for creators, professionals, and businesses. Work smarter with our suite of powerful tools.</p>
@@ -42,7 +42,7 @@ function Footer() {
             </div>
 
         <div className="divider divider-neutral before:bg-gray-500 after:bg-gray-500 text-gray-500 w-8/12 mx-auto mt-10"></div>
-            <div className="container mx-auto flex justify-between items-center w-7/12">
+            <div className="container mx-auto flex flex-col md:flex-row space-y-3 justify-between items-center w-7/12">
                 <p className="text-center">
                     &copy; {new Date().getFullYear()} Your Company. All rights reserved.
                 </p>
