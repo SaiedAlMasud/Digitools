@@ -20,17 +20,14 @@ function App() {
       <div className="w-10/12 mx-auto">
         <Navbar />
         <BannerSection />
-        <StatsSection />
-        {/*
-      <Suspense fallback={<h1 className="text-4xl font-bold text-center text-error mt-10">Loading tools...</h1>}>
-        <ToolsSection toolsPromise={toolsPromise} />
-      </Suspense>
-      <TutorialSection />
-      <PricingSection />
-      */}
-
-        
-
+      </div>
+      <StatsSection />
+      <div className="w-10/12 mx-auto">
+        <Suspense fallback={<h1 className="text-4xl font-bold text-center text-error mt-10">Loading tools...</h1>}>
+          <ToolsSection toolsPromise={toolsPromise} />
+        </Suspense>
+        <TutorialSection />
+        <PricingSection />
       </div>
       <Footer />
     </div>
