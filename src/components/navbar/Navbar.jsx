@@ -2,7 +2,7 @@ import React from "react";
 import { CiShoppingCart } from "react-icons/ci";
 function Navbar({ selectedProduct }) {
     return (
-        <div className="navbar bg-base-100">
+        <div className="navbar bg-base-100 sticky top-0 z-50 sm:w-full md:w-10/12 mx-auto"> 
             <div className="navbar-start">
                 <h1 className="text-3xl font-bold bg-linear-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">DigiTools</h1>
             </div>

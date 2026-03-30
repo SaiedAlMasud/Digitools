@@ -19,8 +19,9 @@ function App() {
   const toolsPromise = fetchTools();
   return (
     <div>
+      <Navbar selectedProduct={selectedProduct}/>
       <div className="sm:w-full md:w-10/12 mx-auto">
-        <Navbar selectedProduct={selectedProduct} />
+        
         <BannerSection />
       </div>
       <StatsSection />
