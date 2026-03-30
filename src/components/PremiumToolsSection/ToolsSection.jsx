@@ -1,7 +1,15 @@
-import React, { use } from "react";
+import React, { use, useState } from "react";
 import PremiumCard from "./PremiumCard";
+import CartSection from "./CartSection";
 function ToolsSection({ toolsPromise }) {
-    const tools = use(toolsPromise);  
+    const[buttonType, setButtonType] = useState("product");
+    const tools = use(toolsPromise); 
+    const handleProductbtn = () => {
+        setButtonType("product");
+    } 
+    const handleCartbtn = () => {
+        setButtonType("cart");
+    }
     return (
         <div className="my-15 mx-auto">
             <div className="text-center space-y-7">
@@ -13,17 +21,17 @@ function ToolsSection({ toolsPromise }) {
                 </p>
             </div>
             <div className="flex justify-center my-6">
-                <a className="btn rounded-l-3xl bg-linear-to-r from-blue-500 to-purple-500 text-white">
+                <button onClick={handleProductbtn} className={`btn rounded-l-3xl ${buttonType === "product" ? "bg-linear-to-r from-blue-500 to-purple-500 text-white" : "bg-gray-200 text-gray-600"}`}>
                     Products
-                </a>
-                <a className="btn rounded-r-3xl">
+                </button>
+                <button onClick={handleCartbtn} className={`btn rounded-r-3xl ${buttonType === "cart" ? "bg-linear-to-r from-blue-500 to-purple-500 text-white" : "bg-gray-200 text-gray-600"}`}>
                     Cart
-                </a>
+                </button>
             </div>
             <div className="grid grid-cols-3 gap-12 w-11/12 mx-auto">
-                {tools.map((tool) => (
+                {buttonType === "product" ? tools.map((tool) => (
                     <PremiumCard key={tool.id} tool={tool} />
-                ))}
+                )) : <CartSection />}
             </div>
         </div>
     );
