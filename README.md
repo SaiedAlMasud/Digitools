@@ -10,6 +10,7 @@ DigiTools is a clean and user-friendly web application where users can explore d
  - React Toastify (for notifications)
  - React Icons
  - JavaScript (ES6+)
+ - JSON Data for product listing
 # Features
 - Users can see notification in every action like for successful add to card, remove from cart, proceed to purchase.
 - Users can add products into the cart, view the cart and remove from cart
